@@ -1,0 +1,169 @@
+* {
+  font-family: fantasy;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: none
+}
+
+li {
+  list-style: none
+}
+
+input,
+select,
+textarea,
+  {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-lighlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*清浮动*/
+
+.clearfix:after {
+  content: "";
+  display: none;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+  display: table;
+  width: 100%;
+}
+
+body {
+  color: #24292e;
+  background: #fff;
+}
+
+header {
+  background: #24292e;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.title {
+  float: left;
+  margin-left: 20px;
+}
+
+.title a {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 2px;
+  font-weight: bolder;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto
+}
+
+.nav {
+  padding: 58 0;
+  background: url("../../images//codelines.svg"), #2b3137;
+}
+
+.nav .container {
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.language {
+  display: table;
+}
+
+.nav .container div img {
+  width: 120px;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+section .row {
+  padding-top: 50px;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+section table {
+  margin-top: 20px;
+}
+
+section .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section .input-group label {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
