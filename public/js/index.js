@@ -55,7 +55,7 @@ window.addEventListener("load", function () {
                 </tr>"
 
       }
-      onButtonClick()
+      onButtonClick();
     } else {
       html += "<tr><td>暂无数据</td></tr>"
     }
@@ -124,6 +124,7 @@ window.addEventListener("load", function () {
               </tr>"
       }
       onButtonClick();
+
     } else {
       $('.navigation').removeClass('show');
       html += "<tr><td>暂无数据</td></tr>"
@@ -137,3 +138,22 @@ window.addEventListener("load", function () {
     getTopicData();
   })
 })
+
+function message() {
+  window.postMessage({
+    "target": "contentscript",
+    "data": {
+      //"from": from,
+      "to": "n1M5ADSZx15bH13BKfPAEji1d6f6sfM2vZn",
+      "value": "0",
+      "contract": {}
+    },
+    "method": "neb_call"
+  }, "*");
+}
+
+// // listen message from contentscript
+// window.addEventListener('message', function (e) {
+//   // e.detail contains the transferred data (can
+//   console.log("recived by page:" + e + ", e.data:" + JSON.stringify(e.data));
+// });
